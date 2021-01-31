@@ -25,10 +25,13 @@ import org.parceler.Parcels;
 
 import java.util.List;
 
+
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
     Context context;
     List <Movie> movies;
+    int radius = 30; // corner radius, higher value = more rounded
+    int margin = 10; // crop margin, set to 0 for corners with no crop
 
     public MovieAdapter(Context context, List<Movie> movies) {
         this.context = context;
